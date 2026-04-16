@@ -1,0 +1,125 @@
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Glass */
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* Section */
+.section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Heading */
+.heading {
+  font-size: 2rem;
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  background: linear-gradient(45deg,#3b82f6,#9333ea);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn-outline {
+  border: 1px solid #3b82f6;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Skills */
+.bar {
+  background: #222;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.bar div {
+  background: #3b82f6;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Projects */
+.project-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Fade */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Chatbot */
+#chatbot-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3b82f6;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#chatbot {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: #111;
+  border-radius: 10px;
+}
+
+.chat-header {
+  background: #3b82f6;
+  padding: 10px;
+  text-align: center;
+}
+
+#chat-body {
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  background: #222;
+  border: none;
+  color: white;
+}
+
+.chat-input button {
+  background: #3b82f6;
+  padding: 10px;
+}
